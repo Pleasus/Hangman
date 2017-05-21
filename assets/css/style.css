@@ -1,0 +1,79 @@
+body {
+	background: url("../images/enterprise.jpg") fixed center;
+}
+
+.wrapper {
+	margin: 40px;
+}
+
+h1, h2 {
+	padding-left: 20px;
+	line-height: .8;
+}
+
+h2 {
+	color: white;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.hit-the-floor {
+	color: gold;
+	font-size: 11em;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+	text-align: center;
+}
+
+.smallh1 {
+	font-size: 30px;
+}
+
+.instruction {
+	text-align: center;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+  }
+
+  .letter-button-color {
+    color: darkcyan;
+  }
+
+  .fridge-color {
+    color: orange;
+  }
+
+  #display {
+    margin-top: 78px;
+    height: 500px;
+    width: 220px;
+    margin-left: 60px;
+  }
+
+  #buttons {
+    padding-top: 60px;
+  }
+
+  #playA {
+    margin-left: 2px;
+    font-size: 22px;
+    color: gold;
+    border-style: solid;
+    background-color: black;
+    width: 125px;
+  }
+
+  img.size {
+  	width: 33.33%;
+  	float: left;
+  }
