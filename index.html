@@ -20,19 +20,24 @@
 		<h2> Welcome to the</h2>
 		<h1 class="hit-the-floor">Star Trek<span class="smallh1">&trade;</span></h1>
 
-		<img class="size" src="assets/images/prosper.jpg">
+		<img id="images" class="size" src="assets/images/prosper.jpg">
 
 		<h2 class="textRight">Hangman Game!</h2>
 		<h2 h2 class="textRight"><span class="glyphicon glyphicon-flash"></span>Classic Edition<span class="glyphicon glyphicon-flash"></span></h2>
 
-		<br><br><br><br><br><br>
+		<br><br><br><br><br><br><br>
 
-		<h2 class="instruction">Use the alphabet to guess the word.</h2>
-		
-		<br><br>
-
-  		<div id="buttons"></div>
-  		<button id="playA">play again</button>
+		<div class="wrapper2">
+			<h2 class="instruction">Press any key to get started</h2>
+			<p id="wins">Wins = 0</p>
+			<h2 class="instruction">Current Word</h2>
+			<h2 class="instruction" id="puzzle"></h2>
+			<br>
+			<p class="instruction" id="countdown">Guesses remaining: 10</p>
+			<h4 class="instruction">Letters Guessed</h4>
+			<h4 id=lettersGuessed></h4>
+  			<button id="reset">play again</button>
+  		</div>
 
 	</div>
 </body>

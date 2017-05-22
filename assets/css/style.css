@@ -1,9 +1,14 @@
 body {
-	background: url("../images/enterprise.jpg") fixed center;
+	background: url("../images/classicEnterprise.jpg") fixed center;
 }
 
 .wrapper {
+  width: 810px;
 	margin: 40px;
+}
+
+.wrapper2 {
+  width: 100%;
 }
 
 h1, h2 {
@@ -64,16 +69,22 @@ h2 {
     padding-top: 60px;
   }
 
-  #playA {
-    margin-left: 2px;
+  #reset {
     font-size: 22px;
     color: gold;
     border-style: solid;
     background-color: black;
     width: 125px;
+    margin: 10px 42.5%;
+    text-align: center;
   }
 
   img.size {
-  	width: 33.33%;
+  	width: 238px;
   	float: left;
+    margin: 20px;
+  }
+
+  p {
+    text-align: center;
   }
