@@ -24,10 +24,7 @@
 // var x = event.keyCode;
 
 document.addEventListener("DOMContentLoaded", function(){
-  // Handler when the DOM is fully loaded
 
-
-//Array of characters computer can generate
 var characters = ["voyage", "spock", "bones", "chekov", "phaser", "vulcan", "romulan", "stun", "crew"];
 var wins = 0;
 var word;
@@ -38,29 +35,24 @@ var countdown = 10;
 var currentWord = characters[Math.floor(Math.random() * characters.length)];
 var splitCurrentWord = currentWord.split("");   
 
-//taking the ramdom word and assigning and underscore for each letter
 for (var i = 0; i < splitCurrentWord.length; i++) {
     answer[i] = "_ ";
     }
 
-//printing the underscore random word to the DOM
 word = answer.join(" ");
     document.getElementById("puzzle").innerHTML = word;
 
 
-    //Computer displaying the guessed letters
+
     document.onkeyup = function(event) {
 
-        //event.key is the key pressed
+        
         var letter = event.key;
         var guessedLetter = splitCurrentWord.indexOf(letter);
 
-        //event.key contains the letters pressed
-        //.push means to push it into the array "guess"
       	guess.push(event.key);
         document.getElementById("lettersGuessed").innerHTML = guess;
     
-        //if the guess is correct, add it to the DOM
         if (currentWord.includes(letter)) {
         answer.splice(guessedLetter, 1, letter);
         document.getElementById("puzzle").innerHTML = answer;
