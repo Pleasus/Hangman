@@ -35,6 +35,9 @@ var countdown = 10;
 var currentWord = characters[Math.floor(Math.random() * characters.length)];
 var splitCurrentWord = currentWord.split("");   
 
+var winAudio = new Audio("assets/sounds/stars.mp3");
+var loseAudio = new Audio("assets/sounds/lose.mp3");
+
 for (var i = 0; i < splitCurrentWord.length; i++) {
     answer[i] = "_ ";
     }
@@ -65,18 +68,21 @@ word = answer.join(" ");
 
         if (countdown == 0) {
           reset();
-          alert("you lost!");
           document.getElementById("images").src = ("assets/images/pain.jpg");
+          loseAudio.play();
+          alert("you lost!");       
         }
 
         for (var i = 0; i < answer.length; i++) {
           var n = answer.includes("_ ");
           }
               if (n == false) {
-              	alert("You Won This Round!")
+              	winAudio.play();
+                alert("You Won This Round!")
                 document.getElementById("wins").innerHTML = ("Wins = " + wins++);
                 document.getElementById("images").src = ("assets/images/" + currentWord + ".jpg");
                 document.getElementById("word").innerHTML = (currentWord);
+                
                 reset();
                 } 
                     console.log(currentWord);
