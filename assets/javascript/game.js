@@ -25,7 +25,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-var characters = ["voyage", "spock", "bones", "chekov", "phaser", "vulcan", "romulan", "stun", "crew"];
+var characters = ["voyage", "spock", "bones", "chekov", "phaser", "vulcan", "romulan", "stun", "crew", "warp"];
 var wins = 0;
 var word;
 var guess = [];
