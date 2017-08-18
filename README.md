@@ -10,3 +10,4 @@ To Play:
 3. Click "play again" button if you want to play again.
 
 Process GIF:
+![Hangman Process](assets/images/Hangman-Process.gif)
